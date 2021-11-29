@@ -45,7 +45,7 @@ a {
     font-family: 'Franklin Gothic Book';
 }
 .background {
-    background-image: url("img/APbg.png");
+    background-color: red;
     filter: blur(8px);
     -webkit-filter: blur(8px);
     height: 100%;
