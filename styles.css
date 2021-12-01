@@ -60,6 +60,6 @@ a {
 .persona {
     z-index: 3;
     position: absolute;
-    height: 300px;
+    height: 295px;
     transform: translate(-150px, -25px);
 }
