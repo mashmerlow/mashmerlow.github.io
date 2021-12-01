@@ -56,3 +56,10 @@ a {
     top:0px;
     left:0px;
 }
+
+.persona {
+    z-index: 3;
+    position: absolute;
+    height: 300px;
+    transform: translate(-150px, -25px);
+}
