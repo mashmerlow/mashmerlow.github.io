@@ -1,7 +1,6 @@
 body {
     color: black;
     text-align: center;
-    font-family: 'PT Serif', serif;
     height: 100%;
 }
 
@@ -29,7 +28,8 @@ img {
 }
 
 a {
-    font-family: 'PT Serif', serif;
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
 }
 
 .persona {
@@ -39,10 +39,9 @@ a {
     transform: translate(-150px, -25px);
 }
 
-.tab-content {
+.tab-content, .tab-content:target ~ #home  {
     display: none;
-}
-.tab-content:target {
+  }
+  #home, .tab-content:target {
     display: block;
-}
-
+  }
