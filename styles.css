@@ -42,7 +42,7 @@ a {
 .tab-content, .tab-content:target ~ #home  {
     display: none;
   }
-#home, .tab-content:target {
+#home, .tab-content:target, [id*='picture']:target ~ #art {
     display: block;
   }
 
@@ -53,6 +53,15 @@ a {
     min-width: 200px;
  }
 
+ .picture {
+    max-width: 25%;
+    padding: 5px;
+    display: inline-block;
+    min-width: 100px;
+ }
+
 #player {
     width: 50%;
  }
+
+ 
