@@ -63,7 +63,7 @@ a:active {
     min-width: 200px;
  }
 
- .picture {
+.picture {
     max-width: 25%;
     padding: 5px;
     display: inline-block;
@@ -74,4 +74,9 @@ a:active {
     width: 50%;
  }
 
- 
+.imgpage {
+    max-width: 10%;
+    padding: 5px;
+    display: inline-block;
+    min-width: 200px;
+}
