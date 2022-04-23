@@ -51,8 +51,10 @@ a:active {
 .persona {
     z-index: 3;
     position: absolute;
-    height: 295px;
-    transform: translate(-150px, -25px);
+    height: 280px;
+    min-width: 288px;
+    margin-left: 50%;
+    margin-top: -8%;
 }
 
 .tab-content, .tab-content:target ~ #home  {
