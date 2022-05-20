@@ -2,13 +2,14 @@ body {
     color: black;
     text-align: center;
     height: 100%;
-    background-color: rgba(233, 189, 208, 0.439);
+    background-color: #F5E2EA;
     font-family: 'Outfit', sans-serif;   
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -o-user-select: none;
-    user-select: none; 
+    user-select: none;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 img {
