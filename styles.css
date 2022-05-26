@@ -41,17 +41,8 @@ img {
 
 a {
     font-family: 'Outfit', sans-serif;
-    font-weight: 900;
     text-decoration: none;
-    color: rgb(205, 129, 156);
-}
-
-a:hover {
-    color: rgb(228, 154, 180);;
-}
-
-a:active {
-    color: rgb(160, 87, 112);
+    color: black
 }
 
 .persona {
@@ -104,3 +95,41 @@ a:active {
     color: white;
     text-align: center;
  }
+
+.backbutton {
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.backbutton:hover {
+    border: 10px solid rgb(89, 89, 89);
+    border-radius: 25px;
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+
+.backbutton:active {
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: rgb(178, 178, 178);
+}
+
+#menu a {
+    color: #B48095;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    color: #C8A8B5;
+}
+
+#menu a:active {
+    color: #733A52;
+}
+
+#social a {
+    font-weight: bold;
+}
