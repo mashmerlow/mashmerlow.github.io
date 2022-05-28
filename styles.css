@@ -42,7 +42,15 @@ img {
 a {
     font-family: 'Outfit', sans-serif;
     text-decoration: none;
-    color: black
+    color: #B48095
+}
+
+a:hover {
+    color:#cc93aa
+}
+
+a:active {
+    color:#6f4b59
 }
 
 .persona {
