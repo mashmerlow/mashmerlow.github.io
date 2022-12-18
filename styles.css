@@ -1,139 +1,159 @@
 body {
     color: black;
     text-align: center;
-    height: 100%;
     background-color: #F5E2EA;
-    font-family: 'Outfit', sans-serif;   
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    image-rendering: -webkit-optimize-contrast;
+    font-family: 'Outfit', sans-serif;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    margin-bottom: 10px;
-}
 .logo {
-    position: absolute;
-    background-color: #FFFFFF;
-    max-width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 10px solid black;
-    border-radius: 25px;
-    padding: 15px;
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.467);
-}
-
-.social {
-    max-width: 50%;
-    padding: 2px;
-    display: inline-block;
+    margin-top: auto;
+    padding: 5px;
 }
 
 a {
-    font-family: 'Outfit', sans-serif;
     text-decoration: none;
-    color: #B48095
+}
+.website {
+    position:absolute;
+    background-color: #FFFFFF;
+    border: 10px solid black;
+    border-radius: 25px;
+    margin-top: auto;
+    padding: 1%;
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.467);
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
 }
 
-a:hover {
-    color:#cc93aa
-}
 
-a:active {
-    color:#6f4b59
-}
-
-.persona {
-    z-index: 3;
-    position: absolute;
-    height: 280px;
-    min-width: 288px;
-    margin-left: 35%;
-    margin-top: -8%;
-}
-
-.tab-content, .tab-content:target ~ #home  {
-    display: none;
-  }
-#home, .tab-content:target, [id*='picture']:target ~ #art {
-    display: block;
-  }
-
-.song {
-    max-width: 50%;
-    padding: 5px;
-    display: inline-block;
-    min-width: 200px;
- }
-
-.picture {
-    max-width: 25%;
-    padding: 5px;
-    display: inline-block;
-    min-width: 100px;
- }
-
-#player {
-    width: 50%;
- }
-
-.imgpage {
+.twitter {
     max-width: 10%;
-    padding: 5px;
-    display: inline-block;
-    min-width: 200px;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #d0f8fe;
-    color: white;
-    text-align: center;
- }
-
-.backbutton {
+    min-width: 100px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
     color: white;
 }
 
-.backbutton:hover {
-    border: 10px solid rgb(89, 89, 89);
-    border-radius: 25px;
-    background-color: rgb(89, 89, 89);
-    color: white;
-}
-
-.backbutton:active {
+.youtube {
+    max-width: 10%;
+    min-width: 100px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
+    color: white;
+}
+
+.mastodon {
+    max-width: 10%;
+    min-width: 100px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.tumblr {
+    max-width: 10%;
+    min-width: 100px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.deviantart {
+    max-width: 10%;
+    min-width: 100px;
+    margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.youtube:hover {
+    border: 10px solid red;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+}
+
+.youtube:active {
+    border: 10px solid rgb(133, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(133, 0, 0);
     color: rgb(178, 178, 178);
 }
 
-#menu a {
-    color: #B48095;
-    font-weight: bold;
+.deviantart:hover {
+    border: 10px solid #05CC47;
+    border-radius: 25px;
+    background-color: #05CC47;
+    color: black;
 }
 
-#menu a:hover {
-    color: #C8A8B5;
+.deviantart:active {
+    border: 10px solid #0c7f3a;
+    border-radius: 25px;
+    background-color: #0c7f3a;
+    color: black;
 }
 
-#menu a:active {
-    color: #733A52;
+.mastodon:hover {
+    border: 10px solid #5B4BE1;
+    border-radius: 25px;
+    background-color: #5B4BE1;
+    color: white;
+}
+
+.mastodon:active {
+    border: 10px solid #382d9b;
+    border-radius: 25px;
+    background-color: #382d9b;
+    color: rgb(178, 178, 178);
+}
+
+.tumblr:hover {
+    border: 10px solid #001232;
+    border-radius: 25px;
+    background-color: #001232;
+    color: white;
+}
+
+.tumblr:active {
+    border: 10px solid #0c7f3a;
+    border-radius: 25px;
+    background-color: #0c7f3a;
+    color: rgb(178, 178, 178);
+}
+
+.twitter:hover {
+    border: 10px solid #1D9BF0;
+    border-radius: 25px;
+    background-color: #1D9BF0;
+    color: black;
+}
+
+.twitter:active {
+    border: 10px solid #1066a0;
+    border-radius: 25px;
+    background-color: #1066a0;
+    color: black;
 }
