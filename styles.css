@@ -14,7 +14,6 @@ a {
     text-decoration: none;
 }
 .website {
-    position:absolute;
     background-color: #FFFFFF;
     border: 10px solid black;
     border-radius: 25px;
@@ -28,17 +27,17 @@ a {
 }
 
 .links {
-    max-width: 10%;
+    min-width: 10%;
     margin: auto;
+    width: 30%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .twitter {
-    max-width: 10%;
-    min-width: 100px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
@@ -46,11 +45,7 @@ a {
 }
 
 .youtube {
-    max-width: 10%;
-    min-width: 100px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
@@ -58,11 +53,7 @@ a {
 }
 
 .mastodon {
-    max-width: 10%;
-    min-width: 100px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
@@ -70,11 +61,7 @@ a {
 }
 
 .tumblr {
-    max-width: 10%;
-    min-width: 100px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
@@ -82,11 +69,7 @@ a {
 }
 
 .deviantart {
-    max-width: 10%;
-    min-width: 100px;
     margin-bottom: 4px;
-    margin-left: auto;
-    margin-right: auto;
     border: 10px solid black;
     border-radius: 25px;
     background-color: black;
