@@ -27,6 +27,11 @@ a {
     margin-bottom: 2%;
 }
 
+.links {
+    max-width: 10%;
+    margin: auto;
+}
+
 
 .twitter {
     max-width: 10%;
@@ -131,16 +136,16 @@ a {
 }
 
 .tumblr:hover {
-    border: 10px solid #001232;
+    border: 10px solid #1D3765;
     border-radius: 25px;
-    background-color: #001232;
+    background-color: #1D3765;
     color: white;
 }
 
 .tumblr:active {
-    border: 10px solid #0c7f3a;
+    border: 10px solid #0d1b35;
     border-radius: 25px;
-    background-color: #0c7f3a;
+    background-color: #0d1b35;
     color: rgb(178, 178, 178);
 }
 
