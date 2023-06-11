@@ -31,15 +31,13 @@ a {
     border-radius: 25px;
     padding: 1%;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.467);
-    animation:animatebottom 0.3s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}
-
 }
 
 .tab-content, .tab-content:target ~ #home  {
     display: none;
 }
 
-#home, .tab-content:target, [id*='picture']:target ~ #art {
+#home, .tab-content:target, [id*='picture']:target{
     display: block;
 }
 
