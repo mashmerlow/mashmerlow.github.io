@@ -12,6 +12,17 @@ body {
 
 a {
     text-decoration: none;
+    color: #784358;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a1637c;
+}
+
+a:active {
+    text-decoration: none;
+    color: #482231;
 }
 
 .logo {
@@ -41,9 +52,15 @@ a {
     display: block;
 }
 
+.tab-content-art, .tab-content-art:target ~ #pic1  {
+    display: none;
+}
+
+#pic1, .tab-content-art:target, [id*='picture']:target{
+    display: block;
+}
+
 .column {
-    margin-left: auto;
-    margin-right: auto;
     display: inline-block;
 }
 
