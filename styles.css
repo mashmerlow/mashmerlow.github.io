@@ -1,8 +1,28 @@
 body {
     color: black;
     text-align: center;
+    background-image: url("img/bg.png");
+    background-position: center;
+    background-size: cover;
     background-color: #F5E2EA;
+    background-repeat: no-repeat;
     font-family: 'Outfit', sans-serif;
+    animation: animatebottom 0.5s}@keyframes animatebottom{from{bottom:-50px;opacity:0} to{bottom:0;opacity:1}
+}
+
+a {
+    text-decoration: none;
+    color: #784358;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #a1637c;
+}
+
+a:active {
+    text-decoration: none;
+    color: #482231;
 }
 
 .logo {
@@ -10,20 +30,61 @@ body {
     padding: 5px;
 }
 
-a {
-    text-decoration: none;
-}
+
 .website {
+    position:absolute;
+    max-width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     background-color: #FFFFFF;
     border: 10px solid black;
     border-radius: 25px;
-    margin-top: auto;
     padding: 1%;
     box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.467);
-    margin-top: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 2%;
+}
+
+.tab-content, .tab-content:target ~ #home  {
+    display: none;
+}
+
+#home, .tab-content:target, [id*='picture']:target{
+    display: block;
+}
+
+.tab-content-art, .tab-content-art:target ~ #pic1  {
+    display: none;
+}
+
+#pic1, .tab-content-art:target, [id*='picture']:target{
+    display: block;
+}
+
+.column {
+    display: inline-block;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    border: 10px solid #d7a2b8;
+    border-radius: 25px;
+    background-color: #d7a2b8;
+    color: black;
+}
+
+.button:active {
+    border: 10px solid #876171;
+    border-radius: 25px;
+    background-color: #876171;
+    color: black;
 }
 
 .links {
@@ -33,6 +94,7 @@ a {
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    display: inline-block;
 }
 
 
@@ -42,6 +104,7 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+    display: inline-block;    
 }
 
 .youtube {
@@ -50,6 +113,7 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+    display: inline-block;
 }
 
 .mastodon {
@@ -58,6 +122,7 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+    display: inline-block;
 }
 
 .tumblr {
@@ -66,6 +131,7 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+    display: inline-block;
 }
 
 .deviantart {
@@ -74,6 +140,43 @@ a {
     border-radius: 25px;
     background-color: black;
     color: white;
+    display: inline-block;
+}
+
+.soundcloud {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.newgrounds {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.bluesky {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.cohost {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
 }
 
 .youtube:hover {
@@ -81,6 +184,7 @@ a {
     border-radius: 25px;
     background-color: red;
     color: white;
+
 }
 
 .youtube:active {
@@ -88,6 +192,7 @@ a {
     border-radius: 25px;
     background-color: rgb(133, 0, 0);
     color: rgb(178, 178, 178);
+
 }
 
 .deviantart:hover {
@@ -95,6 +200,7 @@ a {
     border-radius: 25px;
     background-color: #05CC47;
     color: black;
+
 }
 
 .deviantart:active {
@@ -102,6 +208,7 @@ a {
     border-radius: 25px;
     background-color: #0c7f3a;
     color: black;
+
 }
 
 .mastodon:hover {
@@ -144,4 +251,46 @@ a {
     border-radius: 25px;
     background-color: #1066a0;
     color: black;
+}
+
+.soundcloud:hover {
+    border: 10px solid #f94000;
+    border-radius: 25px;
+    background-color: #f94000;
+    color: white;
+}
+
+.soundcloud:active {
+    border: 10px solid #6e1b00;
+    border-radius: 25px;
+    background-color: #6e1b00;
+    color: white;
+}
+
+.newgrounds:hover {
+    border: 10px solid #fd4740;
+    border-radius: 25px;
+    background-color: #fd4740;
+    color: white;
+}
+
+.newgrounds:active {
+    border: 10px solid #80201c;
+    border-radius: 25px;
+    background-color: #80201c;
+    color: white;
+}
+
+.cohost:hover {
+    border: 10px solid #83254f;
+    border-radius: 25px;
+    background-color: #83254f;
+    color: white;
+}
+
+.cohost:active {
+    border: 10px solid #330d1e;
+    border-radius: 25px;
+    background-color: #330d1e;
+    color: white;
 }
