@@ -4,10 +4,10 @@ body {
     background-image: url("img/bg.png");
     background-position: center;
     background-size: cover;
-    
     background-color: #F5E2EA;
     background-repeat: no-repeat;
     font-family: 'Outfit', sans-serif;
+    animation: animatebottom 0.5s}@keyframes animatebottom{from{bottom:-50px;opacity:0} to{bottom:0;opacity:1}
 }
 
 a {
@@ -85,4 +85,212 @@ a:active {
     border-radius: 25px;
     background-color: #876171;
     color: black;
+}
+
+.links {
+    min-width: 10%;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+
+.twitter {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;    
+}
+
+.youtube {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.mastodon {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.tumblr {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.deviantart {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.soundcloud {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.newgrounds {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.bluesky {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.cohost {
+    margin-bottom: 4px;
+    border: 10px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+}
+
+.youtube:hover {
+    border: 10px solid red;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+
+}
+
+.youtube:active {
+    border: 10px solid rgb(133, 0, 0);
+    border-radius: 25px;
+    background-color: rgb(133, 0, 0);
+    color: rgb(178, 178, 178);
+
+}
+
+.deviantart:hover {
+    border: 10px solid #05CC47;
+    border-radius: 25px;
+    background-color: #05CC47;
+    color: black;
+
+}
+
+.deviantart:active {
+    border: 10px solid #0c7f3a;
+    border-radius: 25px;
+    background-color: #0c7f3a;
+    color: black;
+
+}
+
+.mastodon:hover {
+    border: 10px solid #5B4BE1;
+    border-radius: 25px;
+    background-color: #5B4BE1;
+    color: white;
+}
+
+.mastodon:active {
+    border: 10px solid #382d9b;
+    border-radius: 25px;
+    background-color: #382d9b;
+    color: rgb(178, 178, 178);
+}
+
+.tumblr:hover {
+    border: 10px solid #1D3765;
+    border-radius: 25px;
+    background-color: #1D3765;
+    color: white;
+}
+
+.tumblr:active {
+    border: 10px solid #0d1b35;
+    border-radius: 25px;
+    background-color: #0d1b35;
+    color: rgb(178, 178, 178);
+}
+
+.twitter:hover {
+    border: 10px solid #1D9BF0;
+    border-radius: 25px;
+    background-color: #1D9BF0;
+    color: black;
+}
+
+.twitter:active {
+    border: 10px solid #1066a0;
+    border-radius: 25px;
+    background-color: #1066a0;
+    color: black;
+}
+
+.soundcloud:hover {
+    border: 10px solid #f94000;
+    border-radius: 25px;
+    background-color: #f94000;
+    color: white;
+}
+
+.soundcloud:active {
+    border: 10px solid #6e1b00;
+    border-radius: 25px;
+    background-color: #6e1b00;
+    color: white;
+}
+
+.newgrounds:hover {
+    border: 10px solid #fd4740;
+    border-radius: 25px;
+    background-color: #fd4740;
+    color: white;
+}
+
+.newgrounds:active {
+    border: 10px solid #80201c;
+    border-radius: 25px;
+    background-color: #80201c;
+    color: white;
+}
+
+.cohost:hover {
+    border: 10px solid #83254f;
+    border-radius: 25px;
+    background-color: #83254f;
+    color: white;
+}
+
+.cohost:active {
+    border: 10px solid #330d1e;
+    border-radius: 25px;
+    background-color: #330d1e;
+    color: white;
 }
