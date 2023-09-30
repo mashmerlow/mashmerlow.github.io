@@ -264,7 +264,7 @@ a:active {
     border: 10px solid #6e1b00;
     border-radius: 25px;
     background-color: #6e1b00;
-    color: white;
+    color: rgb(178, 178, 178);
 }
 
 .newgrounds:hover {
@@ -278,7 +278,7 @@ a:active {
     border: 10px solid #80201c;
     border-radius: 25px;
     background-color: #80201c;
-    color: white;
+    color: rgb(178, 178, 178);
 }
 
 .cohost:hover {
@@ -292,5 +292,5 @@ a:active {
     border: 10px solid #330d1e;
     border-radius: 25px;
     background-color: #330d1e;
-    color: white;
+    color: rgb(178, 178, 178);
 }
