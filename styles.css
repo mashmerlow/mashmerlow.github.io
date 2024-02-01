@@ -282,3 +282,28 @@ a:active {
     background-color: #330d1e;
     color: rgb(178, 178, 178);
 }
+
+.portheader {
+    background-color: black;
+    color: white;
+    padding: 0.5%;
+}
+
+.porttitle {
+    font-family: 'Archivo Black', sans-serif; border: none;
+    font-size: 3.2vw;
+    display: inline;    
+}
+
+.portlanguage {
+    font-family: 'Archivo Black', sans-serif; border: none;
+    font-size: 1vw;
+    display: inline;
+    float: right;
+    margin-top: 1.25%;
+}
+
+.portcontent {
+    font-family: 'Outfit', sans-serif; border: none;
+    font-size: 1.4vw;
+}
