@@ -9,315 +9,103 @@
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;900&display=swap" rel="stylesheet">
     <style>
-        body {background-image: url("img/bg.png"); color: black; text-align: center; background-position: center; background-size: cover; background-color: #F5E2EA; background-repeat: no-repeat; font-family: 'Outfit', sans-serif; animation: animatebottom 0.5s}@keyframes animatebottom{from{bottom:-50px;opacity:0} to{bottom:0;opacity:1}}
+
     </style>
 </head>
 <body>
-
-<div class="website">
-    <div class="logo">
-        <img draggable="false" style="max-width: 100%; min-width: 50%; height: auto; width: auto;" src="img/sig2.png"><br><br>
+    <div class="header">
+        <a href="#home"><img class="logo" draggable="false" style="max-width: 300px; padding: 0;" alt="mashmerlow" src="img/sig2.png"></a>
+        <button class="viewtoggle" style="border:none; background-color: transparent; float:inline-end" onclick="darkmodeToggle()"></button>
     </div>
-
-    <div id="art" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/alberto.png"><img src="./img/art/alberto.png" style="max-width: 72%; border-radius: 25px"><br></a>
-        <small>Alberto Balsalm, PaintTool SAI, 2021-2022<br>[<a href="https://www.deviantart.com/mashmerlow/art/Alberto-Balsalm-909319158">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/678250708714291200/alberto-balsalm-a-painting-that-took-me-exactly-an">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1501541136279683075">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art2" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/ap.png"><img src="./img/art/ap.png" style="max-width: 72%; border-radius: 25px"><br></a>
-        <small>Answered Prayers, PaintTool SAI, 2020<br>[<a href="https://www.deviantart.com/mashmerlow/art/Answered-Prayers-826875237">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/637414720091095040/older-works-to-kickstart-this-blog-o">Tumblr</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art3" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/bot.png"><img src="./img/art/bot.png" style="max-width: 50%; border-radius: 25px"><br></a>
-        <small>Getting Back on Track, Krita, 2023<br>[<a href="https://www.deviantart.com/mashmerlow/art/Getting-back-on-track-964326072">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/718434376857321472/getting-back-on-track-little-sketch-i-made-trying">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1662275425169559553">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art4" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/lines.png"><img src="./img/art/lines.png" style="max-width: 32%; border-radius: 25px"><br></a>
-        <small>Lines, PaintTool SAI, 2022<br>[<a href="https://www.deviantart.com/mashmerlow/art/Lines-931031582">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/696571200422428672/lines-study-based-on-a-picture-i-took-while-in-the">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1574823093134135318">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-        
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art5" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/radiant.png"><img src="./img/art/radiant.png" style="max-width: 72%; border-radius: 25px"><br></a>
-        <small>Radiant, Krita, 2022<br>[<a href="https://www.deviantart.com/mashmerlow/art/Radiant-934756306">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/699399048859353088/radiant-proud-to-say-this-painting-did-not-take">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1586134496511918082">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art6" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/tdov.png"><img src="./img/art/tdov.png" style="max-width: 30%; border-radius: 25px"><br></a>
-        <small>TDOV, Krita, 2023<br>[<a href="https://www.deviantart.com/mashmerlow/art/TDOV-955957288">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/713297213079617536/after-so-many-years-i-finally-found-a-place-where">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1641727031078682624">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="art7" class="tab-content">
-        Here are some of the artworks I've worked on.<br><br>
-        <a href="./img/art/wipp.png"><img src="./img/art/wipp.png" style="max-width: 45%; border-radius: 25px"><br></a>
-        <small>Wipp, PaintTool SAI, 2022<br>[<a href="https://www.deviantart.com/mashmerlow/art/Wipp-908859907">DeviantART</a>] [<a href="https://mashmerlow.tumblr.com/post/677839985198661632/wipp">Tumblr</a>] [<a href="https://twitter.com/mashmerlow/status/1499895524287303681">Twitter</a>]</small>
-        <br>
-        <br>
-        <a href="#art"><img src="./img/art/alberto_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art2"><img src="./img/art/ap_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art3"><img src="./img/art/bot_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art4"><img src="./img/art/lines_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art5"><img src="./img/art/radiant_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art6"><img src="./img/art/tdov_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#art7"><img src="./img/art/wipp_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        
-        <br>Click on the previews to view the full picture.<br>You can also click the picture to see its full resolution.
-
-        <img src="./img/necojade_art.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(20%, -120%);">
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
+    <script>
+        function darkmodeToggle() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        }
+    </script>
+<br>
+    <center>i <a href="#art">draw</a>, make <a href="#comics">comics</a>,  <a href="#music">music</a>, work on  <a href="#games">games</a>, and take  <a href="#photos">photos</a>.</center><br>
 
 
-    <div id="comics" class="tab-content">
-        <img src="./img/necojade_comic.png" draggable="false" style="max-width: 50%; position: absolute; transform: translate(-110%, 20%);">
-                <img src="./img/cast2.png" style="min-width: 10%; max-width: 60%; border-radius: 25px;"><br>
-                    <big><b>Miskast</b></big>
-<br>A feline named Yoko navigates a world, much like ours,<br>full of technology, until its sudden convergence with magic.<br><br>I work on it in collaboration with my friend <b><a href="https://www.katsaii.com">Katsaii</a></b><br>Check out the comic, it's hosted of ComicFury.<br><br><a href="https://casterror.cfw.me/">Click here to check it out!</a><br><br>
-            <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="games" class="tab-content">
-        
-        <video width="auto" height="auto" style="max-width: 71%; border-radius: 25px;" controls>
-            <source src="./img/island.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video><br>
-        <small><b>Witch Wanda: Protect the Island</b><br>GameMaker, 2021, all programming done by <a href="https://www.katsaii.com"><b>Katsaii</b></a>, art by <b>Katsaii</b> and I.<br>[<a href="https://gm48.net/game-jams/island/games/witch-wanda-protect-the-island">GM48 Page</a>]</small><br><br>
-
-        <a href="#games"><img src="./img/island_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games2"><img src="./img/candyland_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games3"><img src="./img/daylight_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games4"><img src="./img/loungeware_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="games2" class="tab-content">
-        
-        <video width="auto" height="auto" style="max-width: 71%; border-radius: 25px;" controls>
-            <source src="./img/candyland.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video><br>
-        <small><b>Witch Wanda: Wandaring Candyland</b><br>GameMaker, 2021, all programming done by <a href="https://www.katsaii.com"><b>Katsaii</b></a>, art by <b>Katsaii</b> and I.<br>[<a href="https://gm48.net/game-jams/discovery/games/witch-wanda-wandaring-candyland">GM48 Page</a>]</small><br><br>
-
-        <a href="#games"><img src="./img/island_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games2"><img src="./img/candyland_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games3"><img src="./img/daylight_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games4"><img src="./img/loungeware_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="games3" class="tab-content">
-        
-        <video width="auto" height="auto" style="border-radius: 25px;" controls>
-            <source src="./img/daylight.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video><br>
-        <small><b>Wait for Daylight</b> by Nin2ds<br>RPG Maker 2003, 2022, programming done by <a href="https://allmylinks.com/nin2ds"><b>Nin2ds</b></a> and I, all art by <b>Nin2ds</b><br>[<a href="https://nin2ds.itch.io/wait-for-daylight">itch.io</a>]</small><br><br>
-
-        <a href="#games"><img src="./img/island_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games2"><img src="./img/candyland_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games3"><img src="./img/daylight_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games4"><img src="./img/loungeware_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-    <div id="games4" class="tab-content">
-        
-        <video width="45%" height="auto" style="border-radius: 25px;" controls>
-            <source src="./img/loungeware.mp4" type="video/webm">
-          Your browser does not support the video tag.
-        </video><br>
-        <small><b>Loungeware</b> (art and characters)<br>GameMaker, 2021<br><br>All microgames I've participated in were in collaboration with <b><a href="https://www.katsaii.com">Katsaii</a></b><br>[<a href="https://loungeware.games/">Play on browser</a>]</small><br><br>
-
-        <a href="#games"><img src="./img/island_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games2"><img src="./img/candyland_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games3"><img src="./img/daylight_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <a href="#games4"><img src="./img/loungeware_thumb.png" style="min-width: 10%; max-width: 10%; border-radius: 25px;"></a>
-        <br><br>
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
-
-<!--    <div id="music" class="tab-content">
-        This will have something soon.
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
--->
-
-    <div id="contact" class="tab-content">
-
-        I'm on various social media!<br><br>
-            <a href="https://twitter.com/mashmerlow">
-                <div class="twitter">
-                    Twitter
-                </div>
-            </a>
+    <div class="website">
+        <div id="art" class="tab-content">
+            <center><big><big><big>drawings.</big></big></big></center><br>
+            <small><center>i've been drawing ever since i can remember.<br>here are some of the works i'm most proud of.</center></small><br>
             
-            <a href="https://www.youtube.com/@mashmerlow">
-                <div class="youtube">
-                    YouTube
+            <div class="row">
+                <div class="column">
+                    <a href="img/art/alberto.png"><img src="img/art/alberto_thumb.png"></a>
+                    <a href="img/art/ap.png"><img src="img/art/ap_thumb.png"></a>
+                    <a href="img/art/bot.png"><img src="img/art/bot_thumb.png"></a>
                 </div>
-            </a>
-            
-            <a href="https://mashmerlow.tumblr.com">
-                <div class="tumblr">
-                    Tumblr
+                <div class="column">
+                    <a href="img/art/lines.png"><img src="img/art/lines_thumb.png"></a>
+                    <a href="img/art/radiant.png"><img src="img/art/radiant_thumb.png"></a>
+                    <a href="img/art/tdov.png"><img src="img/art/tdov_thumb.png"></a>
                 </div>
-            </a>
-            
-            <a href="https://mastodon.art/@mashmerlow">
-                <div class="mastodon">
-                    Mastodon
+                <div class="column">
+                    <a href="img/art/wipp.png"><img src="img/art/wipp_thumb.png"></a>
+                    <a href="img/art/bodyprisoner.png"><img src="img/art/bodyprisoner_thumb.png"></a>
+                    <a href="img/art/mshb.png"><img src="img/art/mshb_thumb.png"></a>
                 </div>
-            </a>
-            
-            <a href="https://deviantart.com/mashmerlow">
-                <div class="deviantart">
-                    DeviantArt
+                <div class="column">
+                    <a href="img/art/solargraphy.png"><img src="img/art/solargraphy_thumb.png"></a>
+                    <a href="img/art/watermark.png"><img src="img/art/watermark_thumb.png"></a>
+                    <a href="img/art/panado.png"><img src="img/art/panado_thumb.png"></a>
                 </div>
-            </a>
-            <a href="https://soundcloud.com/mashmerlow">
-                <div class="soundcloud">
-                    Soundcloud
-                </div>
-            </a>
-            
-            <a href="https://mashmerlow.newgrounds.com/">
-                <div class="newgrounds">
-                    Newgrounds
-                </div>
-            </a>
-            
-            <a href="https://bsky.app/profile/mashmerlow.art">
-                <div class="cohost">
-                    Bluesky
-                </div>
-            </a><br><img draggable=false src="./img/email.png" style="max-width: 40%">
+            </div><br><center><small>click each image to view its full size.</small></center>
+        </div>
+    
+        <div id="comics" class="tab-content">
+            <center><big><big><big>comics.</big></big></big></center><br>
+            <small><center>here are some of the projects i'm currently working on.<br>some are collaborations and some are individual.<br>all very deeply important to me</center></small>
+            <br>
 
-            <br><br>
+            <b>Miskast</b> (in hiatus)
+            <br><small>a comic made in collaboration with <a href="https://www.katsaii.com">Katsaii</a>. magic is real in a world of technology. </small><br><br>
 
+            <b>Shipwreck</b>
+            <br><small>monthly entries into <a href="https://mouette.neocities.org/">mouette</a>'s monthly comic collections.</small><br><br>
+            
+            <b>PBX</b>
+            <br><small>a comic about gay furries and telephones in a time of uncertainty. my first "self-made" project.</small><br><br>
 
+            <center><img class="jadeintro" style="max-width: 200px;" src="img/necojade_comic.png"></center><br>
+        </div>
+    
+        <div id="music" class="tab-content">
+            <center><big><big><big>music.</big></big></big></center><br>
+            <small><center>tba.</center></small>
+        </div>
+    
+        <div id="games" class="tab-content">
+            <center><big><big><big>games.</big></big></big></center><br>
+            <small><center>tba.</center></small>
+        </div>
 
-        <a href="#home"><div class="button">Back</div></a>
-    </div>
+        <div id="photos" class="tab-content">
+            <center><big><big><big>photos.</big></big></big></center><br>
+            <small><center>tba.</center></small>
+        </div>
 
-    <div id="home" class="tab-content">
-        <div class="column"><img src="./img/necojade creature_final.png" style="min-width: 10%; max-width: 40%;"></div>
-        <div class="column">Hi there! I'm <b>Jade</b>, but I also go by <b>mashmerlow</b> online.<br>Welcome to my website!<br><br>I'm a digital artist, working on comics and character designs.<br>Below are a few links to some<br>of my projects, contacts and past work!
-            <br><br>
-            <a href="#art"><div class="button">Art</div></a>
-            <!--<a href="./portfolio.html"><div class="button">Portfolio</div></a> -->
-            <a href="#comics"><div class="button">Comics</div></a>
-            <a href="#games"><div class="button">Games</div></a>
-            <!-- <a href="#music"><div class="button">Music</div></a> -->
-            <a href="#contact"><div class="button">Contact</div></a>
+        <div id="contact" class="tab-content">
+            <center><big><big><big>contact.</big></big></big></center><br>
+            <center><small>while i'm not very fond of social media, and don't use it often<br>i do still have a presence in them.<br><br>you can find me on:</small></center>
+            <center>
+                <a href="https://mashmerlow.tumblr.com">tumblr</a><br>
+                <a href="https://bsky.app/profile/mashmerlow.art">bluesky</a><br>
+                <a href="https://www.instagram.com/mashmerlow/">instagram</a><br>
+                <a href="https://twitter.com/mashmerlow">twitter / x</a>
+            </center>
+        </div>
+    
+        <div id="home" class="tab-content">
+            <small><center>hi! welcome to my website! click any<br>of the links above to see the website's content.<br><br></center></small>
+                <center><img class="jadeintro" style="max-width: 200px;" src="img/necojade_art.png"></center><br>
+                <small><center>you can contact me <a href="#contact">here</a> or at</center></small><center><img class="email" style="max-width: 250px;" src="img/email.png"></center>
         </div>
     </div>
-    <br>
-
-</div>
 </body>
 </html>
