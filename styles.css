@@ -1,36 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: 'Outfit', sans-serif;
+}
+
+.header {
+    background: linear-gradient(to right,white, #a47688);
+    padding: 10px;
+    vertical-align: middle;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin-bottom: -5px;
+}
+
 a {
     text-decoration: none;
-    color: #784358;
+    color: #784258;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #a1637c;
+.content-wrap {
+
+    background-color: black;
 }
 
-a:active {
-    text-decoration: none;
-    color: #482231;
+.sidebar {
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    max-width: 150px;
+    overflow-wrap: break-word;
+    height:93.5vh
 }
 
-.logo {
-    margin-top: auto;
-    padding: 5px;
+.sidebar a {
+    color: #e69bb9;
 }
-
 
 .website {
-    position:absolute;
-    max-width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
-    border: 10px solid black;
-    border-radius: 25px;
-    padding: 1%;
-    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.467);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-width: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px
+    
 }
+
+.viewtoggle {
+    width: 34px;
+    height: 34px;
+    background-image: url(img/lightmode.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+        
+.darkmode {
+    background-color: rgb(39, 39, 39);
+    color: white;
+  }
+
+.darkmode .sidebar {
+    background-color: black;
+    color: white;
+}
+
+.darkmode .website {
+    background-color: rgb(39, 39, 39);
+    border-color: black;
+}
+
+.darkmode .content-wrap {
+    background-color:black;
+}
+
+  .darkmode .logo {
+      filter: invert(100%)
+  }
+
+  .darkmode .viewtoggle {
+      filter: invert(100%);
+      background-image: url(img/darkmode.png);
+  }
+
+  .darkmode a {
+      text-decoration: none;
+      color: #e69bb9;
+  }
+
+  .darkmode .jadeintro {
+      filter: invert(25%);
+  }
+
+  .darkmode .email {
+      filter: invert(100%)
+  }
+  
+
 
 .tab-content, .tab-content:target ~ #home  {
     display: none;
@@ -40,245 +111,91 @@ a:active {
     display: block;
 }
 
-.tab-content-art, .tab-content-art:target ~ #pic1  {
-    display: none;
-}
-
-#pic1, .tab-content-art:target, [id*='picture']:target{
-    display: block;
-}
-
-.column {
-    display: inline-block;
-}
-
-.button {
+.row {
+    display: grid;
+    padding: 5px;
     text-align: center;
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
+}
+
+.row img {
+    max-width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+.darkmode .row img {
+    border-color: white;
+}
+
+.comic-preview {
+    max-width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+.darkmode .comic-preview {
+    border-color: white;
+}
+
+.navbar {
     background-color: black;
     color: white;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-bottom-right-radius: 20px;
 }
 
-.button:hover {
-    border: 10px solid #d7a2b8;
-    border-radius: 25px;
-    background-color: #d7a2b8;
-    color: black;
+.navbar a {
+    color: #e69bb9;
 }
 
-.button:active {
-    border: 10px solid #876171;
-    border-radius: 25px;
-    background-color: #876171;
-    color: black;
-}
-
-.links {
-    min-width: 10%;
-    margin: auto;
-    width: 30%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-}
-
-
-.twitter {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
+.darkmode .navbar {
     background-color: black;
-    color: white;
-    display: inline-block;    
-}
-
-.youtube {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.mastodon {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.tumblr {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.deviantart {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.soundcloud {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.newgrounds {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.bluesky {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.cohost {
-    margin-bottom: 4px;
-    border: 10px solid black;
-    border-radius: 25px;
-    background-color: black;
-    color: white;
-    display: inline-block;
-}
-
-.youtube:hover {
-    border: 10px solid red;
-    border-radius: 25px;
-    background-color: red;
-    color: white;
+    color: white;   
+    border-color: black;
 
 }
 
-.youtube:active {
-    border: 10px solid rgb(133, 0, 0);
-    border-radius: 25px;
-    background-color: rgb(133, 0, 0);
-    color: rgb(178, 178, 178);
-
+.darkmode .header {
+    border-color: black;
+    background: linear-gradient(to right, black, #78425872);
 }
 
-.deviantart:hover {
-    border: 10px solid #05CC47;
-    border-radius: 25px;
-    background-color: #05CC47;
-    color: black;
-
+@media (max-width: 428px){
+    .sidebar {
+      display: none;
+    }
 }
 
-.deviantart:active {
-    border: 10px solid #0c7f3a;
-    border-radius: 25px;
-    background-color: #0c7f3a;
-    color: black;
+@media (min-width: 428px){
+    .moretext {
+      display: none;
+    }
 
+    .introtext {
+        display: none;
+    }
 }
 
-.mastodon:hover {
-    border: 10px solid #5B4BE1;
-    border-radius: 25px;
-    background-color: #5B4BE1;
-    color: white;
+.darkmode .homringlogo {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
 }
 
-.mastodon:active {
-    border: 10px solid #382d9b;
-    border-radius: 25px;
-    background-color: #382d9b;
-    color: rgb(178, 178, 178);
+.comicprev {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
-.tumblr:hover {
-    border: 10px solid #1D3765;
-    border-radius: 25px;
-    background-color: #1D3765;
-    color: white;
-}
-
-.tumblr:active {
-    border: 10px solid #0d1b35;
-    border-radius: 25px;
-    background-color: #0d1b35;
-    color: rgb(178, 178, 178);
-}
-
-.twitter:hover {
-    border: 10px solid #1D9BF0;
-    border-radius: 25px;
-    background-color: #1D9BF0;
-    color: black;
-}
-
-.twitter:active {
-    border: 10px solid #1066a0;
-    border-radius: 25px;
-    background-color: #1066a0;
-    color: black;
-}
-
-.soundcloud:hover {
-    border: 10px solid #f94000;
-    border-radius: 25px;
-    background-color: #f94000;
-    color: white;
-}
-
-.soundcloud:active {
-    border: 10px solid #6e1b00;
-    border-radius: 25px;
-    background-color: #6e1b00;
-    color: rgb(178, 178, 178);
-}
-
-.newgrounds:hover {
-    border: 10px solid #fd4740;
-    border-radius: 25px;
-    background-color: #fd4740;
-    color: white;
-}
-
-.newgrounds:active {
-    border: 10px solid #80201c;
-    border-radius: 25px;
-    background-color: #80201c;
-    color: rgb(178, 178, 178);
-}
-
-.cohost:hover {
-    border: 10px solid #1083fe;
-    border-radius: 25px;
-    background-color: #1083fe;
-    color: white;
-}
-
-.cohost:active {
-    border: 10px solid #0168d5;
-    border-radius: 25px;
-    background-color: #0168d5;
-    color: rgb(178, 178, 178);
+.darkmode .comicprev {
+    border-color: white;
 }
