@@ -4,6 +4,7 @@ body {
     background-color: white;
     color: rgb(0, 0, 0);
     font-family: 'Outfit', sans-serif;
+
 }
 
 .header {
@@ -59,6 +60,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .tab-content, .tab-content:target ~ #home  {
@@ -83,5 +85,17 @@ a {
 }
 
 .darkmode .row img {
+    border-color: white;
+}
+
+.comic-preview {
+    max-width: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+.darkmode .comic-preview {
     border-color: white;
 }
