@@ -25,8 +25,9 @@
         element.classList.toggle("darkmode");
         }
     </script>
+
     <div class="navbar">
-        <a href="#art">art</a>, <a href="#comics">comics</a>, <a href="#music">music</a>, <a href="#games">games</a> and <a href="#photos">photos</a>. <div class="moretext">+ <a href="#update">update</a>. <a href="#links">links</a>.</div>
+        <a href="#art">art</a>, <a href="#comics">comics</a>, <a href="#music">music</a> and <a href="#games">games</a>. <div class="moretext">+ <a href="#updates">update</a>. <a href="#links">links</a>.</div>
     </div>
 
     <div class="content-wrap">
@@ -35,7 +36,7 @@
             
             <hr><br>
             <b>Updates</b><br>
-            <small><small><b>of April 2025</b></small></small><br>
+            <small><small><b>8th of April 2025</b></small></small><br>
             <small><small><b>Website rework! Finally!!</b></small></small><br>
             <small><small>After years of messing around with designing and imagining a new layout for this website, I think I'm happy with what I've got.</small></small><br><br>
             <small><small><i><a href="#updates">[read more...]</a></i></small></small><br><br><hr><br><b>Links</b><br><img src="img/button.gif"><br><small>this is my website button. you can put it in yours if you want!</small><br><br><small><small><i><a href="#links">[more links...]</a></i></small></small>
@@ -80,7 +81,7 @@
                 <summary>
                     preview
                 </summary>
-                <center><img style="height: 200px; padding-top: 10px;" src="img/cast2.png"></center>
+                <center><img class="comicprev" src="img/art/miskast_thumb.jpg"></center>
             </details>
             <br>
 
@@ -90,7 +91,7 @@
                 <summary>
                     preview
                 </summary>
-                <center><img style="height: 200px; padding-top: 10px;" src="img/cast2.png"></center>
+                <center><img class="comicprev" src="img/art/shipwreck_thumb.jpg"></center>
             </details>
             <br>
         
@@ -100,7 +101,7 @@
                 <summary>
                     preview
                 </summary>
-                <center><img style="height: 200px; padding-top: 10px;" src="img/cast2.png"></center>
+                <center><img class="comicprev" src="img/art/pbx_thumb.jpg"></center>
             </details>
             <br><center>--</center><br>
 
@@ -109,22 +110,66 @@
     
         <div id="music" class="tab-content">
             <center><big><big><big>music.</big></big></big></center><br>
-            <small><center>tba.</center></small>
+            <small><center>i don't make much music anymore, but here are some<br>tracks i've always felt really proud of.<br><br>they're all chiptune and made with <a href="https://pxtone.org/">pxtone</a>!</center></small><br>
+
+            <audio controls>
+                <source src="music/tfb.ogg" type="audio/ogg">
+            </audio><br><center><small>The Flowing Breeze, 2017</small></center><br><br>
+
+            <audio controls>
+                <source src="music/blabadoosh.ogg" type="audio/ogg">
+            </audio><br><center><small>Blabadoosh, 2018</small></center><br><br>
+            
+            <audio controls>
+                <source src="music/dunderground.ogg" type="audio/ogg">
+            </audio><br><center><small>Dark Underground, 2019</small></center><br><br>
+
+            <audio controls>
+                <source src="music/fast_f.ogg" type="audio/ogg">
+            </audio><br><center><small>Fast, 2020</small></center><br><br>
+
+            <audio controls>
+                <source src="music/floating_candy.ogg" type="audio/ogg">
+            </audio><br><center><small>Floating Candy, 2021</small></center><br><br>
         </div>
     
         <div id="games" class="tab-content">
             <center><big><big><big>games.</big></big></big></center><br>
-            <small><center>tba.</center></small>
-        </div>
+            <small><center>i've worked on some games. not directly, i've only really<br>provided art assets or minimal programming assistance.<br><br>here are some!</center></small><br><br>
+            <div class="row">
+                <div class="column">
+                    <a href="games/island.webm"><img src="games/island_thumb.png"></a>
+                    <a href="games/candyland.webm"><img src="games/candyland_thumb.png"></a>
+                    <a href="games/daylight.webm"><img src="games/daylight_thumb.png"></a>
+                    <a href="games/loungeware.mp4"><img src="games/loungeware_thumb.png"></a>
+                </div>
+            </div>
+            
+            <ol>
+                <li>
+                    <b>Witch Wanda: Protect the Island</b> (2021, GameMaker) [<a href="https://gm48.net/game-jams/island/games/witch-wanda-protect-the-island">GM48 page</a>]<br>with <a href="https://www.katsaii.com">Katsaii</a>.<br><br>
+                </li>
+                <li>
+                    <b>Witch Wanda: Wandaring in Candyland</b> (2021, GameMaker) [<a href="https://gm48.net/game-jams/discovery/games/witch-wanda-wandaring-candyland">GM48 page</a>]<br>with <a href="https://www.katsaii.com">Katsaii</a>.<br><br>
+                </li>
+                <li>
+                    <b>Wait for Daylight</b> by <a href="https://nin2ds.art/">Nin2ds</a> (2022, RPG Maker 2003) [<a href="https://nin2ds.itch.io/wait-for-daylight">itch.io</a>].<br><br>
+                </li>
+                <li>
+                    <b>Loungeware</b> by <a href="https://froghat.dog">spacebake</a> (2021, GameMaker) [<a href="https://loungeware.games/">Play in browser</a>]<br>with <a href="https://www.katsaii.com">Katsaii</a>.
+                </li>
 
-        <div id="photos" class="tab-content">
-            <center><big><big><big>photos.</big></big></big></center><br>
-            <small><center>tba.</center></small>
+            </ol><br><center><small>click on each image to see a video preview of these games.</small></center>
         </div>
 
         <div id="updates" class="tab-content">
             <center><big><big><big>updates.</big></big></big></center><br>
-            <small><center>tba.</center></small>
+            <center><b>Website rework! Finally!! — </b>8th of April 2025</center>
+            <center style="max-width:490px"><small><b>After years of messing around with designing and imagining a new layout for this website, I think I'm happy with what I've got.
+            </b></small><br><br>
+    
+        <small>While before I had been more or less trying to recreate a "carrd.co"-looking UI, I always felt really constrained by it, and especially by the bad practices and hacks I had to do to make it work how I wanted. Now it's no longer something I have to worry about. It's wholly remade from the ground up, in a more flexible form, while still having a distinctive style.<br><br>Speaking of which, the style I'm aiming for is kind of a mix of older Internet with a "newer" look.<br><br>Hope you like it!!</small>
+        </center>
         </div>
 
         <div id="links" class="tab-content">
@@ -150,10 +195,10 @@
                 <a href="https://bsky.app/profile/bunnydudette.bsky.social"><b>bunnydudette</b></a><br>
                 <a href="https://maia.crimew.gay/"><b>maiacrimew</b></a><br>
                 <a href="https://catte.blog"><b>gaykittycorps</b></a><br>
-                
-
+                <a href="https://devilishmirry.xyz/"><b>devilishmirry</b></a><br>
 
                 <br>--<br><br>
+
                 <a href="https://childrenofbabylon.com/"><b>Children of Babylon</b></a> (by gorepup)<br>
                 <a href="https://cuttlebone.itch.io/segments"><b>Segments</b></a> (by cuttlebone)<br>
                 <a href="https://globalcomix.com/c/bleed"><b>BLEED</b></a> (by Huginthecrow)<br>
@@ -189,7 +234,9 @@
                 <a href="https://mashmerlow.tumblr.com">tumblr</a><br>
                 <a href="https://bsky.app/profile/mashmerlow.art">bluesky</a><br>
                 <a href="https://www.instagram.com/mashmerlow/">instagram</a><br>
-                <a href="https://twitter.com/mashmerlow">twitter / x</a>
+                <a href="https://twitter.com/mashmerlow">twitter / x</a><br>
+                <a href="https://soundcloud.com/mashmerlow">soundcloud</a><br>
+                <a href="https://mashmerlow.newgrounds.com/">newgrounds</a>
             </center>
             <br><br><center><small>you can also contact me at my email at<br><img class="email" style="max-width: 250px;" src="img/email.png"></small></center>
         </div>
@@ -203,5 +250,6 @@
         </div>
 
     </div>
+    
 </body>
 </html>
