@@ -4,20 +4,53 @@ body {
     background-color: white;
     color: rgb(0, 0, 0);
     font-family: 'Outfit', sans-serif;
-
+    height: 100vh;
 }
 
 .header {
-    background: linear-gradient(to right,#ffffff00, #78425872);
+    background: linear-gradient(to right,white, #a47688);
     padding: 10px;
     vertical-align: middle;
     border-bottom-style: solid;
     border-width: 1px;
+    margin-bottom: -5px;
 }
 
 a {
     text-decoration: none;
     color: #784258;
+}
+
+.content-wrap {
+
+    background-color: black;
+}
+
+.sidebar {
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    max-width: 150px;
+    overflow-wrap: break-word;
+    height: max-content;
+
+}
+
+.sidebar a {
+    color: #e69bb9;
+}
+
+.website {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-width: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px
+    
 }
 
 .viewtoggle {
@@ -33,6 +66,20 @@ a {
     background-color: rgb(39, 39, 39);
     color: white;
   }
+
+.darkmode .sidebar {
+    background-color: black;
+    color: white;
+}
+
+.darkmode .website {
+    background-color: rgb(39, 39, 39);
+    border-color: black;
+}
+
+.darkmode .content-wrap {
+    background-color:black;
+}
 
   .darkmode .logo {
       filter: invert(100%)
@@ -56,12 +103,7 @@ a {
       filter: invert(100%)
   }
   
-.website {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
+
 
 .tab-content, .tab-content:target ~ #home  {
     display: none;
@@ -97,5 +139,55 @@ a {
 
 
 .darkmode .comic-preview {
+    border-color: white;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-bottom-right-radius: 20px;
+}
+
+.navbar a {
+    color: #e69bb9;
+}
+
+.darkmode .navbar {
+    background-color: black;
+    color: white;   
+    border-color: black;
+
+}
+
+.darkmode .header {
+    border-color: black;
+    background: linear-gradient(to right, black, #78425872);
+}
+
+@media (max-width: 428px){
+    .sidebar {
+      display: none;
+    }
+}
+
+@media (min-width: 428px){
+    .moretext {
+      display: none;
+    }
+
+    .introtext {
+        display: none;
+    }
+}
+
+.darkmode .homringlogo {
+    border-style: solid;
+    border-width: 1px;
     border-color: white;
 }
