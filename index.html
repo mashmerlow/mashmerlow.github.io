@@ -24,6 +24,13 @@
         var element = document.body;
         element.classList.toggle("darkmode");
         }
+
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        }
+});
+
     </script>
 
     <div class="navbar">
