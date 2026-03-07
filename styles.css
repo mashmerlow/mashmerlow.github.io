@@ -20,182 +20,25 @@ a {
     color: #784258;
 }
 
-.content-wrap {
-
-    background-color: black;
+img {
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
-.sidebar {
-    float: left;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    max-width: 150px;
-    overflow-wrap: break-word;
-    height:93.5vh
+#bg {
+  background: url('img/bg.png');
+  background-repeat: repeat-x;
+  width: 2000px;
+  height: 1800px;
+  animation: bgScrollLeft 60s linear infinite;
+  ;
 }
 
-.sidebar a {
-    color: #e69bb9;
-}
-
-.website {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-width: 1px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 0px
-    
-}
-
-.viewtoggle {
-    width: 34px;
-    height: 34px;
-    background-image: url(img/lightmode.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-        
-.darkmode {
-    background-color: rgb(39, 39, 39);
-    color: white;
+@keyframes bgScrollLeft {
+  from {
+    background-position: 0 0;
   }
-
-.darkmode .sidebar {
-    background-color: black;
-    color: white;
-}
-
-.darkmode .website {
-    background-color: rgb(39, 39, 39);
-    border-color: black;
-}
-
-.darkmode .content-wrap {
-    background-color:black;
-}
-
-  .darkmode .logo {
-      filter: invert(100%)
+  to {
+    background-position: -2000px 0;
   }
-
-  .darkmode .viewtoggle {
-      filter: invert(100%);
-      background-image: url(img/darkmode.png);
-  }
-
-  .darkmode a {
-      text-decoration: none;
-      color: #e69bb9;
-  }
-
-  .darkmode .jadeintro {
-      filter: invert(25%);
-  }
-
-  .darkmode .email {
-      filter: invert(100%)
-  }
-  
-
-
-.tab-content, .tab-content:target ~ #home  {
-    display: none;
-}
-
-#home, .tab-content:target, [id*='picture']:target{
-    display: block;
-}
-
-.row {
-    display: grid;
-    padding: 5px;
-    text-align: center;
-}
-
-.row img {
-    max-width: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-}
-
-.darkmode .row img {
-    border-color: white;
-}
-
-.comic-preview {
-    max-width: 200px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-}
-
-
-.darkmode .comic-preview {
-    border-color: white;
-}
-
-.navbar {
-    background-color: black;
-    color: white;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    border-bottom-right-radius: 20px;
-}
-
-.navbar a {
-    color: #e69bb9;
-}
-
-.darkmode .navbar {
-    background-color: black;
-    color: white;   
-    border-color: black;
-
-}
-
-.darkmode .header {
-    border-color: black;
-    background: linear-gradient(to right, black, #78425872);
-}
-
-@media (max-width: 428px){
-    .sidebar {
-      display: none;
-    }
-}
-
-@media (min-width: 428px){
-    .moretext {
-      display: none;
-    }
-
-    .introtext {
-        display: none;
-    }
-}
-
-.darkmode .homringlogo {
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-}
-
-.comicprev {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-}
-
-.darkmode .comicprev {
-    border-color: white;
 }
