@@ -57,3 +57,17 @@ svg {
 #pic1, .tab-content-art:target, [id*='picture']:target{
     display: block;
 }
+
+.column img {
+    border: solid black 1px;
+}
+
+.game img {
+    border: solid black 1px;
+    margin-top: 0;
+}
+
+.comicprev{
+    border: solid black 1px;
+    margin-top: 0;
+}
