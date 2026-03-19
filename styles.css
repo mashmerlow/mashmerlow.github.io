@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
     color: rgb(0, 0, 0);
     font-family: 'Outfit', sans-serif;
+    background-image: url(img/background.png);
 }
 
 .header {
@@ -25,20 +25,35 @@ img {
     margin-left: 5px;
 }
 
-#bg {
-  background: url('img/bg.png');
-  background-repeat: repeat-x;
-  width: 2000px;
-  height: 1800px;
-  animation: bgScrollLeft 60s linear infinite;
-  ;
+.navbutton {
+    padding-left: 52.55px;
+    padding-right: 52.55px;
 }
 
-@keyframes bgScrollLeft {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -2000px 0;
-  }
+.navbutton:hover {
+    background: #a47688;
+    cursor:pointer;
+}
+
+.navbar a {
+  color: white
+}
+
+svg {
+  fill: white
+}
+.tab-content, .tab-content:target ~ #home  {
+    display: none;
+}
+
+#home, .tab-content:target, [id*='picture']:target{
+    display: block;
+}
+
+.tab-content-art, .tab-content-art:target ~ #pic1  {
+    display: none;
+}
+
+#pic1, .tab-content-art:target, [id*='picture']:target{
+    display: block;
 }
